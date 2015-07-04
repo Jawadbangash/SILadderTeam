@@ -1,0 +1,2 @@
+class WorkloadController < ApplicationController
+end
