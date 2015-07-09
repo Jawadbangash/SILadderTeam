@@ -1,1 +1,2 @@
-<h2>Thanks, you paid <strong>$5.00</strong>!</h2>
+<% Email.send_signup_email.deliver_now#(@user).deliver
+ %><h2>Thanks, you paid <strong>$5.00</strong>!</h2>
