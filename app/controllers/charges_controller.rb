@@ -1,7 +1,10 @@
 class ChargesController < ApplicationController
 
-def new
-end
+  def new
+  end
+
+  def home
+  end
 
   def create
     # Amount in cents
@@ -19,16 +22,9 @@ end
       :currency    => 'usd'
     )
 
-
-
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to charges_path
-
-
-
-
-
   end
 
 

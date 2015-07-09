@@ -1,0 +1,7 @@
+  <h1>Hello and welcome to Ladder Digital!</h1>
+
+ <%= form_tag("/charges/new", method: "get") do %>
+  <%= label_tag(:q, "Brand Website:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Submit") %>
+<% end %>
