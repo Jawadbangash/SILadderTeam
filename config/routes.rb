@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :charges
-  root 'charges#home'
+  # root 'ads/new'
+  get '/ads' => 'ads#new'
+  
+  resources :ads
+
+
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
