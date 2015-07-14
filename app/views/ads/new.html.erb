@@ -1,0 +1,8 @@
+  <h1>Hello and welcome to Ladder Digital!</h1>
+
+
+ <%= form_for @ad do |a| %>
+ 	<%= a.label :variations %>
+    <%= a.text_field  :variations %>
+    <%= a.submit "Submit", class: "btn btn-primary" %>
+ <%end%>
