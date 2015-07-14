@@ -1,0 +1,16 @@
+
+#bottom_cta {
+  text-align: center;
+  padding: 7.5rem 0;
+  h2 {
+    @include bold_font;
+    color: $dark_gray;
+    font-size: 3rem;
+    margin: 0;
+  }
+  p {
+      font-size: 1.25rem;
+      margin: 0 0 2.5rem 0;
+      color: #a7a8a8;
+    }
+}
